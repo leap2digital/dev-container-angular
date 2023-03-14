@@ -10,7 +10,7 @@ services:
       DISPLAY: ":14"
       LIBGL_ALWAYS_INDIRECT: 0
     volumes:
-      - ../zurich-direct-sales-front-end/:/zurich-direct-sales-front-end/
+      - ../zurich-scu-front-end/:/zurich-scu-front-end/
     volumes_from:
       - x11-bridge:rw
     depends_on:
