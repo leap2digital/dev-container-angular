@@ -19,7 +19,7 @@ services:
   x11-bridge: # https://github.com/JAremko/docker-x11-bridge
     image: jare/x11-bridge
     volumes:
-      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - ".X11-unix:/tmp/.X11-unix:rw"
     ports:
       - "8080:8080"
     restart: always
